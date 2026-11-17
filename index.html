@@ -16,7 +16,9 @@
         <span class="site-name">Sean Cervenka</span>
         <nav class="site-nav" aria-label="Main navigation">
           <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
           <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -26,8 +28,11 @@
         <div class="page-shell hero-layout">
           <div class="hero-copy">
             <h1 id="home-heading">Sean Cervenka</h1>
-            <p class="hero-focus">Cartography, GIS, and Geography</p>
-            <p class="hero-intro">I’m completing a double major at the University of Wisconsin–Madison and work as a project manager at the Wisconsin State Cartographers Office.</p>
+            <p class="hero-focus">Cartography and Geographic Information Systems; Physical Geography</p>
+            <p class="hero-intro">
+              <strong>Project Manager</strong><br>
+              State Cartographer’s Office | WISDOT Right-Of-Way Team
+            </p>
             <div class="hero-actions">
               <a class="button" href="#about">
                 About me
@@ -35,6 +40,8 @@
                   <path d="M8 2.5v10m-3.5-3.5L8 12.5 11.5 9" />
                 </svg>
               </a>
+              <a class="hero-link" href="#projects">View projects</a>
+              <a class="hero-link" href="https://www.linkedin.com/in/seancervenka">LinkedIn</a>
             </div>
           </div>
 
@@ -69,19 +76,156 @@
         </div>
       </section>
 
-      <!-- Add Projects here when there is approved project content. -->
+      <section class="projects" id="projects" aria-labelledby="projects-heading">
+        <div class="page-shell section-layout">
+          <h2 class="section-title" id="projects-heading">Projects</h2>
+          <ul class="project-list">
+            <li>
+              <a href="#rugged-systems">Esri’s Weekend of Innovation Hackathon | Rugged SystEMS | Overall Winner</a>
+              <p class="entry-meta">July 2026</p>
+            </li>
+            <li>
+              <a href="#bicycle-infrastructure">Bicycle Infrastructure and Intermodal Connectivity in Greater Madison, WI</a>
+              <p class="entry-meta">May 2025</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="about" id="about" aria-labelledby="about-heading">
-        <div class="page-shell about-layout">
-          <h2 id="about-heading">About</h2>
-          <div class="about-copy">
-            <p>I’ve held four roles and completed three internships, including one at Esri.</p>
-            <p>I like to spend my free time outdoors, especially hiking and camping.</p>
+        <div class="page-shell section-layout">
+          <h2 class="section-title" id="about-heading">About</h2>
+          <div class="resume">
+            <section class="resume-section">
+              <h3>Education</h3>
+              <h4>University of Wisconsin-Madison</h4>
+              <p class="entry-meta">September 2024 - May 2027</p>
+              <ul>
+                <li>Bachelor of Science: Cartography and Geographic Information Systems; Physical Geography</li>
+                <li>Certificate in Geospatial Data Science</li>
+              </ul>
+            </section>
+
+            <section class="resume-section">
+              <h3>Experience</h3>
+
+              <div class="resume-entry">
+                <h4>Esri | Educational &amp; Support Services</h4>
+                <p class="entry-meta">Redlands, CA</p>
+                <div class="resume-role">
+                  <h5>Technical Support Intern</h5>
+                  <p class="entry-meta">May 2026 - August 2026</p>
+                  <ul>
+                    <li>Deployed and administered an ArcGIS Enterprise environment to reproduce and troubleshoot customer issues, validating workflows, documenting software defects, and communicating findings to technical leads</li>
+                    <li>Joined the release-testing team for the June ArcGIS Online release, rapidly reproducing customer issues, testing regressions, and documenting findings while communicating with product teams to support overnight updates</li>
+                    <li>Developed automated GIS workflows using Python, ArcGIS Notebooks, Power Automate, and Task Scheduler, integrating ArcGIS Online and Enterprise to control and validate data before publication to public web layers</li>
+                    <li>Delivered multiple individual and group technical presentations demonstrating how GIS workflows and applications can address complex spatial problems and support real-world decision-making</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="resume-entry">
+                <h4>State Cartographer’s Office | WISDOT Right-Of-Way Team</h4>
+                <p class="entry-meta">Madison, WI</p>
+                <div class="resume-role">
+                  <h5>Project Manager</h5>
+                  <p class="entry-meta">September 2026 - Present</p>
+                  <ul>
+                    <li>Led technical operations for a team of five graduate and undergraduate GIS interns, serving as the primary technical resource for Python development, workflow optimization, troubleshooting, and production support</li>
+                    <li>Updated and enhanced existing Python scripts, streamlining GIS production workflows, automating repetitive tasks, improving data validation, and increasing consistency and efficiency across project deliverables</li>
+                    <li>Oversaw quality assurance of GIS deliverables, reviewing completed work against WISDOT specifications, identifying errors, and ensuring data accuracy and compliance with project requirements</li>
+                    <li>Managed team onboarding and day-to-day coordination, monitoring individual progress, providing performance feedback, and facilitating meetings to maintain production timelines and deliverable standards</li>
+                  </ul>
+                </div>
+                <div class="resume-role">
+                  <h5>GIS Intern</h5>
+                  <p class="entry-meta">October 2025 - May 2026</p>
+                  <ul>
+                    <li>Evaluated existing GIS production workflows, identifying inefficiencies and communicating recommendations to project leads to improve data consistency and production processes</li>
+                    <li>Georeferenced 1,500+ WISDOT right-of-way plat sheets, integrating historical documents with existing GIS data to improve spatial referencing and accessibility of transportation records</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="resume-entry">
+                <h4>Sauk County | Land Information</h4>
+                <p class="entry-meta">Baraboo, WI</p>
+                <div class="resume-role">
+                  <h5>GIS Intern &amp; Land Records Assistant</h5>
+                  <p class="entry-meta">May 2025 - August 2025</p>
+                  <ul>
+                    <li>Deployed Esri’s Sign Management Solution in collaboration with the Highway Department and Esri developers, translating field requirements into a GIS workflow using ArcGIS Pro, ArcGIS Online, and ArcGIS Enterprise</li>
+                    <li>Redigitized trails at Devil’s Lake State Park using high-density LiDAR, 3-inch orthoimagery, and DEMs, improving spatial accuracy for recreation and online mapping</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h3>Projects</h3>
+
+              <div class="resume-entry" id="rugged-systems">
+                <h4>Esri’s Weekend of Innovation Hackathon | Rugged SystEMS | Overall Winner</h4>
+                <p class="entry-meta">July 2026</p>
+                <ul>
+                  <li>Conceptualized and led the development of a GIS-based emergency response application that evaluates off-road accessibility using terrain, slope, and hydrologic constraints to support rural EMS operations</li>
+                  <li>Applied raster analysis on LiDAR-derived elevation data to calculate terrain roughness, develop suitability models, and package analysis outputs for offline navigation</li>
+                  <li>Presented the winning project to 600+ Esri employees, interns, and public attendees, communicating the application's GIS methodology and emergency response use case</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry" id="bicycle-infrastructure">
+                <h4>Bicycle Infrastructure and Intermodal Connectivity in Greater Madison, WI</h4>
+                <p class="entry-meta">May 2025</p>
+                <ul>
+                  <li>Developed a literature-based crash hotspot scoring model, co-authored a 28-page report, and created a conceptualization and implementation diagram documenting a reproducible GIS workflow.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h3>Skills</h3>
+              <ul>
+                <li><strong>Technical:</strong> ArcGIS Pro, ArcGIS Online, ArcGIS Enterprise, ArcGIS Field Maps, QGIS, Adobe Illustrator, Python, R, SQL</li>
+                <li><strong>Analytical:</strong> Spatial Modeling, Data Quality Assurance, Change Detection / Temporal Analysis</li>
+              </ul>
+            </section>
+
+            <section class="resume-section">
+              <h3>Relevant Coursework</h3>
+
+              <div class="resume-entry">
+                <h4>GIS &amp; Cartography</h4>
+                <ul>
+                  <li>Remote Sensing (371)</li>
+                  <li>GIS Applications (578)</li>
+                  <li>GIS and Spatial Analysis (579)</li>
+                  <li>Graphic Design in cartography (572)</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <h4>Data Science &amp; Analysis</h4>
+                <ul>
+                  <li>Advanced Geocomputing &amp; Geospatial Big Data Analytics (573)</li>
+                  <li>Geospatial Database Design &amp; Development (574)</li>
+                  <li>Advanced Quantitative methods (560)</li>
+                </ul>
+              </div>
+            </section>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Add a Contact footer and navigation link after contact details are approved. -->
+    <footer class="site-footer" id="contact" aria-labelledby="contact-heading">
+      <div class="page-shell section-layout">
+        <h2 class="section-title" id="contact-heading">Contact</h2>
+        <address class="contact-links">
+          <a href="mailto:seancervenka@gmail.com">seancervenka@gmail.com</a>
+          <a href="https://www.linkedin.com/in/seancervenka">LinkedIn</a>
+        </address>
+      </div>
+    </footer>
   </body>
 </html>

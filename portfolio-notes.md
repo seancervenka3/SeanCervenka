@@ -2,7 +2,7 @@
 
 ## Style
 
-The opening gives Sean’s name the largest type, followed by his fields and a short introduction. About uses a tinted band and two columns when there is enough room. On smaller screens, the page reads in one column.
+The opening gives Sean’s name the largest type, followed by his fields and current role. Projects lists the two projects and links to their full entries in About. About uses a tinted band, with a section title on the left and the résumé on the right when there is enough room. On smaller screens, the page reads in one column.
 
 | Color | Hex | Use |
 | --- | --- | --- |
@@ -17,13 +17,52 @@ The pink and blue draw on the TV Girl palette Sean likes. The original contour l
 
 ## Where to make edits
 
-- Open `index.html` in a browser to view the portfolio. Edit this file to change the opening, About copy, and navigation. The About section includes Sean’s Esri internship.
+- Open `index.html` in a browser to view the portfolio. Edit this file to change the opening, project links, résumé entries, contact links, and navigation. Each project has a short link in Projects pointing to its full entry in About.
 - Edit `style.css` to change colors, fonts, and spacing. Shared values are at the top. The wide-screen rules are at the bottom.
 - Put approved images and documents in `assets/`. For example, `assets/resume.pdf` points to a file named `resume.pdf` in that folder. Use descriptive alt text for map previews.
-- Navigation, the **About me** button, and the **Skip to content** link use HTML links to jump down the page. Hover and keyboard focus styles live in `style.css`.
+- Navigation, the Home actions, and the **Skip to content** link use HTML links. Hover and keyboard focus styles live in `style.css`.
+
+## Approved public facts
+
+### Education
+
+- University of Wisconsin-Madison, September 2024 - May 2027
+- Bachelor of Science: Cartography and Geographic Information Systems; Physical Geography
+- Certificate in Geospatial Data Science
+
+### Experience
+
+| Organization | Location | Role | Dates |
+| --- | --- | --- | --- |
+| Esri \| Educational & Support Services | Redlands, CA | Technical Support Intern | May 2026 - August 2026 |
+| State Cartographer’s Office \| WISDOT Right-Of-Way Team | Madison, WI | Project Manager | September 2026 - Present |
+| State Cartographer’s Office \| WISDOT Right-Of-Way Team | Madison, WI | GIS Intern | October 2025 - May 2026 |
+| Sauk County \| Land Information | Baraboo, WI | GIS Intern & Land Records Assistant | May 2025 - August 2025 |
+
+### Projects
+
+- Esri’s Weekend of Innovation Hackathon | Rugged SystEMS | Overall Winner, July 2026
+- Bicycle Infrastructure and Intermodal Connectivity in Greater Madison, WI, May 2025
+
+The full approved responsibilities, achievements, and project descriptions are in About in `index.html`.
+
+### Skills and coursework
+
+- Technical: ArcGIS Pro, ArcGIS Online, ArcGIS Enterprise, ArcGIS Field Maps, QGIS, Adobe Illustrator, Python, R, SQL
+- Analytical: Spatial Modeling, Data Quality Assurance, Change Detection / Temporal Analysis
+
+| GIS & Cartography | Data Science & Analysis |
+| --- | --- |
+| Remote Sensing (371) | Advanced Geocomputing & Geospatial Big Data Analytics (573) |
+| GIS Applications (578) | Geospatial Database Design & Development (574) |
+| GIS and Spatial Analysis (579) | Advanced Quantitative methods (560) |
+| Graphic Design in cartography (572) | |
+
+### Contact
+
+- Email [seancervenka@gmail.com](mailto:seancervenka@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/seancervenka)
 
 ## Planned additions
 
 - **Resume.** Once a resume PDF is supplied and approved for public sharing, save it in `assets/`. Add **Download Resume** first in the opening actions and give it the strongest button style. Link to the actual file with its relative path and the HTML `download` attribute. Use a quieter style for the other actions.
-- **Projects.** Add the section between Home and About once there is at least one approved project. Use a vertical list with each project’s title, Sean’s contribution, and an approved map preview or link when available. Add **Projects** to the navigation and **View projects** to the opening actions alongside **About me**.
-- **Contact and LinkedIn.** Add the approved LinkedIn URL as an easy-to-find secondary link in the opening. Add a Contact footer with approved links or details, and connect **Contact** in the navigation to it.
