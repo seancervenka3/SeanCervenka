@@ -48,15 +48,15 @@ The full approved responsibilities, achievements, and project descriptions are i
 
 ### Skills and coursework
 
-- Technical: ArcGIS Pro, ArcGIS Online, ArcGIS Enterprise, ArcGIS Field Maps, QGIS, Adobe Illustrator, Python, R, SQL
-- Analytical: Spatial Modeling, Data Quality Assurance, Change Detection / Temporal Analysis
+- Technical: GIS Software & Application Development, Geospatial Data Management, GIS Automation & Scripting, Cartographic Design
+- Analytical: Spatial Analysis & Modeling, Spatial Statistics, Data Quality Assessment, Geospatial Problem Solving
 
 | GIS & Cartography | Data Science & Analysis |
 | --- | --- |
 | Remote Sensing (371) | Advanced Geocomputing & Geospatial Big Data Analytics (573) |
 | GIS Applications (578) | Geospatial Database Design & Development (574) |
-| GIS and Spatial Analysis (579) | Advanced Quantitative methods (560) |
-| Graphic Design in cartography (572) | |
+| GIS and Spatial Analysis (579) | Advanced Quantitative Methods (560) |
+| Graphic Design in Cartography (572) | |
 
 ### Contact
 
