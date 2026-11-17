@@ -1,0 +1,252 @@
+:root {
+  --paper: #F7F2E8;
+  --ink: #252C32;
+  --slate-blue: #31566C;
+  --dusty-pink: #DAB4C1;
+  --pink-tint: #F3E9E3;
+  --rule: #D2C6BE;
+
+  --heading-font: Georgia, "Times New Roman", serif;
+  --body-font: system-ui, sans-serif;
+  --page-width: 69rem;
+  --page-gutter: clamp(1.25rem, 5vw, 4rem);
+  --reading-width: 54ch;
+  --header-offset: 6rem;
+
+  scroll-padding-top: var(--header-offset);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+a {
+  color: var(--slate-blue);
+}
+
+:focus-visible {
+  outline: 2px solid var(--slate-blue);
+  outline-offset: 4px;
+}
+
+.page-shell {
+  width: min(var(--page-width), calc(100% - 2 * var(--page-gutter)));
+  margin-inline: auto;
+}
+
+/* Keep navigation available while leaving room to see the anchor targets. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding-block: 0.5rem;
+}
+
+.site-name {
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-inline: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 0.25em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  text-decoration: underline;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 2;
+  padding: 0.5rem 0.75rem;
+  transform: translateY(-200%);
+  background: var(--paper);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+/* The heading can use the full column. Only paragraphs get a reading width. */
+.hero {
+  padding-block: clamp(2.75rem, 7vw, 5.5rem) clamp(3rem, 6vw, 4.75rem);
+}
+
+.hero h1 {
+  font-size: clamp(2.65rem, 8.3vw, 6.1rem);
+  letter-spacing: -0.035em;
+  overflow-wrap: break-word;
+}
+
+.hero-focus {
+  margin-top: 0.65rem;
+  color: var(--slate-blue);
+  font-family: var(--heading-font);
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  line-height: 1.3;
+}
+
+.hero-intro {
+  max-width: var(--reading-width);
+  margin-top: 1.2rem;
+  font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 1.6rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--slate-blue);
+  border-radius: 0.2rem;
+  background: var(--slate-blue);
+  color: var(--paper);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+}
+
+.button-arrow {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-ornament {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.contour-paper {
+  fill: var(--dusty-pink);
+  fill-opacity: 0.42;
+}
+
+.contour-lines,
+.contour-inner-frame,
+.contour-outer-frame {
+  fill: none;
+  stroke: var(--slate-blue);
+}
+
+.contour-lines {
+  stroke-width: 0.85;
+  stroke-opacity: 0.66;
+}
+
+.contour-inner-frame {
+  stroke-width: 0.85;
+  stroke-opacity: 0.52;
+}
+
+.contour-outer-frame {
+  stroke-width: 1;
+}
+
+.about {
+  padding-block: clamp(2.5rem, 5.5vw, 4rem);
+  border-top: 1px solid var(--dusty-pink);
+  background: var(--pink-tint);
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  letter-spacing: -0.025em;
+}
+
+.about-copy {
+  max-width: var(--reading-width);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+}
+
+.about-copy p + p {
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 56rem) {
+  .hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 26%;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 3.75rem);
+  }
+
+  .hero-ornament {
+    display: block;
+  }
+
+  .about-layout {
+    display: grid;
+    grid-template-columns: 26% minmax(0, 1fr);
+    align-items: baseline;
+    gap: clamp(1.5rem, 4vw, 3.75rem);
+  }
+
+  .about h2 {
+    margin-bottom: 0;
+  }
+}
