@@ -8,12 +8,13 @@ The opening gives Sean’s name the largest type, followed by his fields and cur
 | --- | --- | --- |
 | Warm cream | `#F7F2E8` | Main background and button text |
 | Charcoal | `#252C32` | Headings and body text |
-| Slate blue | `#31566C` | Links, buttons, and contour lines |
-| Dusty pink | `#DAB4C1` | Illustration and section border |
+| Slate blue | `#31566C` | Links and buttons |
+| Soft blue tint | `#E2EAEE` | Home background |
+| Dusty pink | `#DAB4C1` | Section borders |
 | Soft pink tint | `#F3E9E3` | About background |
 | Warm gray | `#D2C6BE` | Header divider |
 
-The pink and blue draw on the TV Girl palette Sean likes. The original contour lines reference cartography and time outdoors, and the curved frame takes inspiration from Alphonse Mucha’s ornament. The illustration sits beside the introduction on wide screens. Georgia gives the headings their shape, and the device’s standard sans-serif font keeps navigation and body text easy to read. The page stays still, including when scrolling to a section.
+The pink and blue draw on the TV Girl palette Sean likes. Home uses a soft blue background that meets the warm cream of Projects. Georgia gives the headings their shape, and the device’s standard sans-serif font keeps navigation and body text easy to read. The page stays still, including when scrolling to a section.
 
 ## Where to make edits
 

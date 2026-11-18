@@ -2,6 +2,7 @@
   --paper: #F7F2E8;
   --ink: #252C32;
   --slate-blue: #31566C;
+  --blue-tint: #E2EAEE;
   --dusty-pink: #DAB4C1;
   --pink-tint: #F3E9E3;
   --rule: #D2C6BE;
@@ -115,6 +116,7 @@ a {
 /* The heading can use the full column. Only paragraphs get a reading width. */
 .hero {
   padding-block: clamp(2.75rem, 7vw, 5.5rem) clamp(3rem, 6vw, 4.75rem);
+  background: var(--blue-tint);
 }
 
 .hero h1 {
@@ -181,38 +183,6 @@ a {
   min-height: 2.75rem;
   font-weight: 600;
   text-underline-offset: 0.25em;
-}
-
-.hero-ornament {
-  display: none;
-  width: 100%;
-  height: auto;
-}
-
-.contour-paper {
-  fill: var(--dusty-pink);
-  fill-opacity: 0.42;
-}
-
-.contour-lines,
-.contour-inner-frame,
-.contour-outer-frame {
-  fill: none;
-  stroke: var(--slate-blue);
-}
-
-.contour-lines {
-  stroke-width: 0.85;
-  stroke-opacity: 0.66;
-}
-
-.contour-inner-frame {
-  stroke-width: 0.85;
-  stroke-opacity: 0.52;
-}
-
-.contour-outer-frame {
-  stroke-width: 1;
 }
 
 .projects,
@@ -416,17 +386,6 @@ a {
 }
 
 @media (min-width: 56rem) {
-  .hero-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 26%;
-    align-items: center;
-    gap: clamp(1.5rem, 4vw, 3.75rem);
-  }
-
-  .hero-ornament {
-    display: block;
-  }
-
   .section-layout {
     display: grid;
     grid-template-columns: 26% minmax(0, 1fr);
