@@ -79,16 +79,159 @@
       <section class="projects" id="projects" aria-labelledby="projects-heading">
         <div class="page-shell section-layout">
           <h2 class="section-title" id="projects-heading">Projects</h2>
-          <ul class="project-list">
-            <li>
-              <a href="#rugged-systems">Esri’s Weekend of Innovation Hackathon | Rugged SystEMS | Overall Winner</a>
-              <p class="entry-meta">July 2026</p>
-            </li>
-            <li>
-              <a href="#bicycle-infrastructure">Bicycle Infrastructure and Intermodal Connectivity in Greater Madison, WI</a>
-              <p class="entry-meta">May 2025</p>
-            </li>
-          </ul>
+          <div class="project-list">
+            <article class="project" aria-labelledby="rugged-project-title">
+              <div class="project-preview">
+                <img class="project-image" src="assets/rugged-systems-cost-distance-preview.jpg"
+                  alt="Multicolor cost-distance raster over satellite imagery" loading="lazy">
+                <div class="project-intro">
+                  <h3 id="rugged-project-title">Rugged SystEMS</h3>
+                  <p class="entry-meta">Esri’s Weekend of Innovation Hackathon | Overall Winner | July 2026</p>
+                  <p>A GIS application evaluates off-road access for rural emergency responders using terrain, slope, and hydrology.</p>
+                  <p><strong>My role:</strong> I led development, modeled terrain suitability from LiDAR, and presented the project.</p>
+                </div>
+              </div>
+
+              <details class="project-details">
+                <summary aria-label="Project details for Rugged SystEMS">Project details</summary>
+                <ul class="project-description">
+                  <li>Conceptualized and led the development of a GIS-based emergency response application that evaluates off-road accessibility using terrain, slope, and hydrologic constraints to support rural EMS operations</li>
+                  <li>Applied raster analysis on LiDAR-derived elevation data to calculate terrain roughness, develop suitability models, and package analysis outputs for offline navigation</li>
+                  <li>Presented the winning project to 600+ Esri employees, interns, and public attendees, communicating the application's GIS methodology and emergency response use case</li>
+                </ul>
+                <p>Final cost-distance layer shown as a visual reference. The app used a separate setup for A* routing.</p>
+                <ul class="project-links">
+                  <li><a href="assets/Screenshot%202026-08-07%20135602.png">Open full-size cost-distance map</a></li>
+                  <li><a href="https://devpost.com/software/rugged-systems">View the Devpost project</a></li>
+                  <li><a href="https://drive.google.com/file/d/1I5wRPKoahwr2ZMyjNZGTamwt5fHUkzxy/view?usp=sharing">Watch the hackathon presentation</a></li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="project" aria-labelledby="bicycle-project-title">
+              <div class="project-preview">
+                <img class="project-image" src="assets/madison-bicycle-crashes-preview.jpg"
+                  alt="Map of Madison with bicycle crash hotspots highlighted by road segment" loading="lazy">
+                <div class="project-intro">
+                  <h3 id="bicycle-project-title">Bicycle Infrastructure and Intermodal Connectivity in Greater Madison, WI</h3>
+                  <p class="entry-meta">May 2025</p>
+                  <p>The study maps bicycle crash hotspots and compares field scores across sites in greater Madison.</p>
+                  <p><strong>My role:</strong> I developed the scoring model, made the maps and workflow diagram, and co-authored the report with Isaac Lebeck.</p>
+                </div>
+              </div>
+
+              <details class="project-details">
+                <summary aria-label="Project details for Bicycle Infrastructure and Intermodal Connectivity">Project details</summary>
+                <p>Developed a literature-based crash hotspot scoring model, co-authored a 28-page report, and created a conceptualization and implementation diagram documenting a reproducible GIS workflow.</p>
+                <ul class="project-links">
+                  <li><a href="assets/Bicycle%20Infrastructure%20and%20Intermodal%20Connectivity%20in%20Greater%20Madison%2C%20WI%20-%20Cervenka%20and%20Lebeck%20%281%29.pdf">Open the full report (PDF)</a></li>
+                  <li><a href="assets/Bicycle%20Infrastructure%20and%20Intermodal%20Connectivity%20in%20Greater%20Madison%2C%20WI%20-%20Cervenka%20and%20Lebeck%20%281%29.pdf" download>Download the report</a></li>
+                </ul>
+                <ul class="project-gallery" role="list">
+                  <li>
+                    <a href="assets/Madison%20Crash%20Density_Final.png">
+                      <img class="project-image" src="assets/madison-bicycle-crashes-preview.jpg"
+                        alt="Madison road segments colored by bicycle crash count from 2020 to 2024" loading="lazy">
+                      Bicycle Crashes in Madison, WI
+                    </a>
+                  </li>
+                  <li>
+                    <a href="assets/Overall%20Score.png">
+                      <img class="project-image" src="assets/madison-overall-field-scores-preview.jpg"
+                        alt="Red circles of different sizes mark overall field scores at Madison study sites" loading="lazy">
+                      Overall Field Scoring
+                    </a>
+                  </li>
+                  <li>
+                    <a href="assets/Quanatative.final.png">
+                      <img class="project-image" src="assets/madison-qualitative-field-scores-preview.jpg"
+                        alt="Madison street map labeling qualitative field observation scores at each study site" loading="lazy">
+                      Qualitative Field Scoring
+                    </a>
+                  </li>
+                  <li>
+                    <a href="assets/Quantitative.actual.png">
+                      <img class="project-image" src="assets/madison-quantitative-field-scores-preview.jpg"
+                        alt="Madison street map labeling quantitative field observation scores at each study site" loading="lazy">
+                      Quantitative Field Scoring
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="project" aria-labelledby="trails-project-title">
+              <div class="project-preview">
+                <img class="project-image" src="assets/trails-manager-web-map-preview.jpg"
+                  alt="ArcGIS web map of trails in the San Bernardino and Los Angeles national forest areas" loading="lazy">
+                <div class="project-intro">
+                  <h3 id="trails-project-title">Trails Manager</h3>
+                  <p>Two technical presentations demonstrate how ArcGIS apps and automation connect trail reporting, fieldwork, and data management.</p>
+                  <p><strong>My role:</strong> I developed and presented the workflows.</p>
+                </div>
+              </div>
+
+              <details class="project-details">
+                <summary aria-label="Project details for Trails Manager">Project details</summary>
+
+                <h4>Leveraging the ArcGIS Suite: Seamless Data Integration Across Applications</h4>
+                <p>The Apps &amp; APIs talk demonstrates public maps, maintenance and wildlife reporting, and a workflow connecting Survey123, Field Maps, Power Automate, and ArcGIS Dashboards.</p>
+                <ul class="project-links">
+                  <li><a href="assets/Apps%20%26%20APIs.pdf">Open the Apps &amp; APIs slides (PDF)</a></li>
+                  <li><a href="assets/Apps%20%26%20APIs.pdf" download>Download the Apps &amp; APIs slides</a></li>
+                </ul>
+
+                <h4>ArcGIS Enterprise: Web Integration, Data Accuracy &amp; Workflow Implementation</h4>
+                <p>The Data &amp; Services talk covers moving data from web apps into ArcGIS Enterprise, running Python on a schedule, and using versioning, privileges, and attribute rules to maintain data quality.</p>
+                <p>The Python presentation example brings Survey123 reports into an ArcGIS Enterprise layer.</p>
+                <ul class="project-links">
+                  <li><a href="assets/S123_Sync_PresentationVersion.py" download>Download the Survey123 sync example (Python)</a></li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="project" aria-labelledby="airports-project-title">
+              <div class="project-preview">
+                <img class="project-image" src="assets/european-airports-preview.jpg"
+                  alt="Map of European airports with circles sized by 2023 passenger count" loading="lazy">
+                <div class="project-intro">
+                  <h3 id="airports-project-title">European Airports</h3>
+                  <p>A proportional-symbol map compares Europe’s 20 busiest airports by 2023 passenger count.</p>
+                  <p><strong>My role:</strong> I designed the map.</p>
+                </div>
+              </div>
+
+              <details class="project-details">
+                <summary aria-label="Project details for European Airports">Project details</summary>
+                <p>The full map labels each airport with its location and passenger count.</p>
+                <ul class="project-links">
+                  <li><a href="assets/Airports_Final.pdf">Open European Airports (PDF)</a></li>
+                  <li><a href="assets/Airports_Final.pdf" download>Download European Airports</a></li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="project" aria-labelledby="africa-project-title">
+              <div class="project-preview">
+                <img class="project-image" src="assets/geographic-features-of-africa-preview.jpg"
+                  alt="Shaded-relief map of Africa labeled with cities, waterways, and terrain features" loading="lazy">
+                <div class="project-intro">
+                  <h3 id="africa-project-title">Geographic Features of Africa</h3>
+                  <p>A shaded-relief reference map labels cities, waterways, and physical features across Africa.</p>
+                  <p><strong>My role:</strong> I designed the map.</p>
+                </div>
+              </div>
+
+              <details class="project-details">
+                <summary aria-label="Project details for Geographic Features of Africa">Project details</summary>
+                <p>The full map includes the labeled relief, a coordinate grid, and a scale in kilometers.</p>
+                <ul class="project-links">
+                  <li><a href="assets/FinalAfricaMap%282%29.pdf">Open Geographic Features of Africa (PDF)</a></li>
+                  <li><a href="assets/FinalAfricaMap%282%29.pdf" download>Download Geographic Features of Africa</a></li>
+                </ul>
+              </details>
+            </article>
+          </div>
         </div>
       </section>
 

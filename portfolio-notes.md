@@ -2,7 +2,7 @@
 
 ## Style
 
-The opening gives Sean’s name the largest type, followed by his fields and current role. Projects lists the two projects and links to their full entries in About. About uses a tinted band, with a section title on the left and the résumé on the right when there is enough room. On smaller screens, the page reads in one column.
+The opening gives Sean’s name the largest type, followed by his fields and current role. Projects uses compact rows with matching thumbnail frames and expandable details. About uses a tinted band, with a section title on the left and the résumé on the right when there is enough room. On smaller screens, the page reads in one column.
 
 | Color | Hex | Use |
 | --- | --- | --- |
@@ -17,10 +17,10 @@ The pink and blue draw on the TV Girl palette Sean likes. The original contour l
 
 ## Where to make edits
 
-- Open `index.html` in a browser to view the portfolio. Edit this file to change the opening, project links, résumé entries, contact links, and navigation. Each project has a short link in Projects pointing to its full entry in About.
+- Open `index.html` in a browser to view the portfolio. Edit this file to change the opening, projects, résumé entries, contact links, and navigation. In Projects, each `article` contains the thumbnail, summary, role, and an expandable `details` area for supporting materials.
 - Edit `style.css` to change colors, fonts, and spacing. Shared values are at the top. The wide-screen rules are at the bottom.
 - Put approved images and documents in `assets/`. For example, `assets/resume.pdf` points to a file named `resume.pdf` in that folder. Use descriptive alt text for map previews.
-- Navigation, the Home actions, and the **Skip to content** link use HTML links. Hover and keyboard focus styles live in `style.css`.
+- Navigation, the Home actions, and the **Skip to content** link use HTML links. **Project details** opens and closes with a click or the keyboard. Hover and keyboard focus styles live in `style.css`.
 
 ## Approved public facts
 
@@ -42,9 +42,12 @@ The pink and blue draw on the TV Girl palette Sean likes. The original contour l
 ### Projects
 
 - Esri’s Weekend of Innovation Hackathon | Rugged SystEMS | Overall Winner, July 2026
-- Bicycle Infrastructure and Intermodal Connectivity in Greater Madison, WI, May 2025
+- Bicycle Infrastructure and Intermodal Connectivity in Greater Madison, WI, May 2025, co-authored with Isaac Lebeck
+- Trails Manager, two technical presentations about ArcGIS apps and data workflows
+- European Airports, a map of the top 20 European airports by 2023 passenger count
+- Geographic Features of Africa, a shaded-relief reference map
 
-The full approved responsibilities, achievements, and project descriptions are in About in `index.html`.
+The résumé descriptions and responsibilities are in About in `index.html`. The Projects section includes the supporting materials listed below.
 
 ### Skills and coursework
 
@@ -62,6 +65,20 @@ The full approved responsibilities, achievements, and project descriptions are i
 
 - Email [seancervenka@gmail.com](mailto:seancervenka@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/seancervenka)
+
+## Project media
+
+Previews are separate JPEGs in `assets/` with a longest side of 800 pixels. The site uses matching frames and keeps the original maps available for reading at full size.
+
+| Project | Preview source and supporting files |
+| --- | --- |
+| Rugged SystEMS | `rugged-systems-cost-distance-preview.jpg` comes from `Screenshot 2026-08-07 135602.png`. It illustrates the final cost-distance layer. The app used a separate setup for A* routing. The details also link to the supplied Devpost submission and hackathon recording. |
+| Bicycle infrastructure | `madison-bicycle-crashes-preview.jpg` comes from `Madison Crash Density_Final.png`. The gallery has matching previews from `Overall Score.png`, `Quanatative.final.png` (qualitative), and `Quantitative.actual.png`. It links to all four originals and the complete report PDF. |
+| Trails Manager | `trails-manager-web-map-preview.jpg` is cropped to the map on slide 7 of `Apps & APIs.pptx`. The details describe both presentations and link to the supplied `Apps & APIs.pdf` and revised `S123_Sync_PresentationVersion.py`. |
+| European Airports | `european-airports-preview.jpg` comes from page 1 of `Airports_Final.pdf`. The full PDF is linked in the details. |
+| Geographic Features of Africa | `geographic-features-of-africa-preview.jpg` comes from page 1 of `FinalAfricaMap(2).pdf`. The full PDF is linked in the details. |
+
+Both original PowerPoint decks stay local through `.gitignore`. Add a link to an approved Data &amp; Services PDF or publicly shared deck when it is ready. A signed-out browser window can verify whether visitors can watch the Drive recording.
 
 ## Planned additions
 
